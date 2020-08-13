@@ -1,0 +1,40 @@
+﻿<Window x:Class="ytdownloaderbywincenty.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ytdownloaderbywincenty"
+        xmlns:xrpb="http://XamlRadialProgressBar/DotNet"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Closed="Window_Closed"
+        Title="Firma ER_DOL- oprogramowanie na..." MaxHeight="450" MaxWidth="400" MinHeight="450" MinWidth="400">
+    <Grid >
+        <TabControl>
+            <TabItem Header="Downloader">
+                <Grid   >
+
+                    <Label FontSize="13" Content="YouTube URL:" />
+                    <Label x:Name="what_label" FontSize="13" Content="" Margin="10,60,-10,-60.4"/>
+                    <xrpb:RadialProgressBar Maximum="100" Minimum="0" x:Name="download_progress_bar"
+			    Foreground="Black" Margin="160,60,139,237.6" />
+                    <TextBox FontSize="13" Text="" x:Name="Url_textbox" HorizontalAlignment="Left" Height="51"  TextWrapping="Wrap"  VerticalAlignment="Top" Width="275" Margin="102,4,0,0"/>
+                    <Button FontSize="13" x:Name="Download_button" Content="Download" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" Click="Download_button_Click" Margin="160,153,0,0" Height="25"/>
+                    <CheckBox Click="Convert_downloaded_video_to_mp3_Checkbox_Click" FontSize="10" x:Name="Convert_downloaded_video_to_mp3_Checkbox" Content="Convert downloaded video to mp.3 file" Margin="10,255,102,105.6" />
+                    <Button FontSize="13" x:Name="Choose_path_Button" Content="Choose path" HorizontalAlignment="Left" Margin="10,223,0,0" VerticalAlignment="Top" Width="87" Click="Choose_path_Button_Click"/>
+                    <Label Content="" x:Name="Name_path_download_label" FontSize="13" HorizontalAlignment="Left" Margin="102,220,0,0" VerticalAlignment="Top" Height="30" Width="240"/>
+                    <CheckBox Click="Delete_the_video_path_after_downloading_checkbox_Click" x:Name="Delete_the_video_path_after_downloading_checkbox" FontSize="10" Content="Delete the video path after downloading" Margin="10,280,-10,87.6"/>
+
+
+                </Grid>
+
+            </TabItem>
+            <TabItem Header=" asd">
+                <Grid>
+                   
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
